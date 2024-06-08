@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="14dp"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:text="KOTES"
+        android:fontFamily="serif"
+        android:textColor="#FF5722"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/quote_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="........"
+        android:layout_centerInParent="true"
+        tools:text="CHECK"
+        android:fontFamily="serif-monospace"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/author_tv"
+        android:layout_below="@id/quote_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Author"
+        android:fontFamily="sans-serif"
+        tools:text="Author"
+        android:textSize="22sp"
+        android:textColor="#909498"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+
+        />
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="NEXT >"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+
+        android:textSize="16sp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_below="@id/next_btn"
+
+
+
+        />
+
+
+</RelativeLayout>

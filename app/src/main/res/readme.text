@@ -1,0 +1,21 @@
+binding.authorTv.text = responseObj.getString("author")?.let { "- $it" }
+
+
+This code uses the Elvis operator (?.let) to handle potential null values from the getString method. It works as follows:
+
+responseObj.getString("author"): This retrieves the author name as a string from the JSON object.
+?.let: This checks if the retrieved value is null.
+If it's null: The entire expression evaluates to null (nothing is set to the text view).
+If it's not null: The code inside the let block is executed.
+- $it: Inside the let block, it prepends a hyphen ("-") followed by a space (" ") to the retrieved author name using string concatenation. The $it refers to the non-null value returned by getString.
+This approach ensures that you only add the hyphen if the author name is actually present in the JSON response.
+
+
+
+
+tune
+
+share
+
+
+more_vert
